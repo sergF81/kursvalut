@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bank_terminal</string>
+    <string name="buttonConnect">Connect</string>
+    <string name="buttonReturn">Return</string>
+    <string name="buttonExchange">Exchange</string>
+    <string name="textViewCurrency">Currency: </string>
+    <string name="textViewExchange">Info about exchange:</string>
+    <string name="textViewNominal">Number of rubles to exchange: </string>
+    <string name="textViewRub">RUB</string>
+    <string name="editExchange">0</string>
+    <string name="textViewValueAfterExchange">Value of currency after exchange: 0 C.U. </string>
+
+</resources>

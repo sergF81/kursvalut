@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/marginLeft"
+    tools:context="com.kursvalut.InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewExchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/textViewExchange"
+            />
+
+        <TextView
+            android:id="@+id/textViewCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            android:text="@string/textViewCurrency"
+             />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewNominal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text="@string/textViewNominal" />
+
+            <EditText
+                android:id="@+id/editExchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:text="@string/editExchange"
+                app:layout_constraintBottom_toBottomOf="@id/textViewNominal"
+                app:layout_constraintStart_toEndOf="@id/textViewNominal"
+                app:layout_constraintTop_toTopOf="@id/textViewNominal" />
+
+            <TextView
+                android:id="@+id/textViewRub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text="@string/textViewRub" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewValueAfterExchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            android:text="@string/textViewValueAfterExchange" />
+
+
+        <Button
+            android:id="@+id/buttonExchange"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/marginTop"
+            android:onClick="onClickExchange"
+            android:text="@string/buttonExchange" />
+
+
+        <Button
+            android:id="@+id/buttonReturn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/marginTop"
+            android:onClick="onClickReturn"
+            android:text="@string/buttonReturn" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
